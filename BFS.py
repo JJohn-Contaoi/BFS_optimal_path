@@ -39,7 +39,7 @@ all_paths = find_all_paths(graph, start_state, goal_state)
 if all_paths:
     print(f"All paths from {start_state} to {goal_state}:")
     for path in all_paths:
-        print(f" -> {path}")
+        print(" -> ".join(path))
 
 print(f"\ntraversed path from {start_state} to {goal_state}:")
 
